@@ -3,6 +3,8 @@ Opvizor Log Analyzer Query Guide
 
 ## VMware ESXi
 
+[Detailled list for VMware ESXi queries](vmware-esxi.MD)
+
 ## VMware vCSA
 
 ## LogQL: Log Query Language
