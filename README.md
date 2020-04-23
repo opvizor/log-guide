@@ -3,7 +3,7 @@ Opvizor Log Analyzer Query Guide
 
 ## VMware ESXi
 
-[Detailled list for VMware ESXi queries](vmware-esxi.MD)
+[Detailed list for VMware ESXi queries](vmware-esxi.MD)
 
 ## VMware vCSA
 
