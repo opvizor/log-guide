@@ -33,6 +33,18 @@ DataTypes:
 * vSphereTask
 
 Query for specific datatypes for selected vCSA
+
+Log:
+```
 {vCSA="myvCSA", DataType="vCSA_Syslog"}
+```
 
+Event:
+```
+{vCSA="myvCSA", DataType="vSphereEvent"}
+```
 
+Task:
+```
+{vCSA="myvCSA", DataType="vSphereEvent"}
+```
