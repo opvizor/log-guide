@@ -50,3 +50,26 @@ Task:
 {ESXi="esxname", DataType="vSphereEvent"}
 ```
 
+### Storage related examples:
+
+#### Performance
+*Explore:*
+```
+{ESXi=~".+"}|="performance has"
+```
+
+*Dashboard:*
+```
+sum(count_over_time({ESXi=~".+"}|="performance has"[1m]))
+```
+
+#### SCSI Messages
+*Explore:*
+```
+{ESXi=~".+"} |~ "SCSI|NMP|ScsiDeviceIO|scsiCorrelator|vmk-iscsi|iscsi|iscsiCorrelator" != "SNMP"
+```
+
+*Dashboard:*
+```
+sum(count_over_time({ESXi=~".+"} |~ "SCSI|NMP|ScsiDeviceIO|scsiCorrelator|vmk-iscsi|iscsi|iscsiCorrelator" != "SNMP"[1m]))
+```
