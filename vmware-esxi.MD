@@ -73,3 +73,16 @@ sum(count_over_time({ESXi=~".+"}|="performance has"[1m]))
 ```
 sum(count_over_time({ESXi=~".+"} |~ "SCSI|NMP|ScsiDeviceIO|scsiCorrelator|vmk-iscsi|iscsi|iscsiCorrelator" != "SNMP"[1m]))
 ```
+
+#### SCSI Sense Codes
+
+*Explore:*
+```
+{ESXi=~".+"}|="Valid sense data"
+```
+
+
+*Dashboard:*
+```
+sum(count_over_time({ESXi=~".+"}|="Valid sense data"[1m]))
+```
