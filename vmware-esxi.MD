@@ -27,7 +27,11 @@ count_over_time({ESXi="esxname",severity="error"}[10m])
 
 ### Data Types specific for VMware ESXi
 
-DataType = ESXi_Syslog
+DataType
+
+* vCSA_Syslog
+* vSphereEvent
+* vSphereTask
 
 Query for specific datatypes for selected ESXi; currently only ESXi_Syslog
 {ESXi="esxname", DataType="ESXi_Syslog"}
