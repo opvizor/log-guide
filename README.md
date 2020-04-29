@@ -7,6 +7,8 @@ Opvizor Log Analyzer Query Guide
 
 ## VMware vCSA
 
+[Detailed list for VMware vCSA (vCenter) queries](vmware-vcsa.MD)
+
 ## LogQL: Log Query Language
 
 Loki comes with its own PromQL-inspired language for queries called *LogQL*.
