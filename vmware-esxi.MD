@@ -33,7 +33,20 @@ DataType
 * vSphereEvent
 * vSphereTask
 
-Query for specific datatypes for selected ESXi; currently only ESXi_Syslog
-{ESXi="esxname", DataType="ESXi_Syslog"}
+Query for specific datatypes for selected ESXi
 
+Log:
+```
+{ESXi="esxname", DataType="ESXi_Syslog"}
+```
+
+Event:
+```
+{ESXi="esxname", DataType="vSphereEvent"}
+```
+
+Task:
+```
+{ESXi="esxname", DataType="vSphereEvent"}
+```
 
