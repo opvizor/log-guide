@@ -20,9 +20,14 @@ Match a certain string in the log file of the selected ESXi
 {ESXi="esxname"} |= "exact match for content"
 ```
 
-Count all error log entries within the last 10 minutes for the selected ESXi
+Count all error log entries within last 10 minutes for the selected ESXi
 ```
 count_over_time({ESXi="esxname",severity="error"}[10m])
+```
+
+Count all log entries within the timeframe for every minute 1 minute grouped by ESXi hosts
+```
+sum(count_over_time({ESXi=~".+", DataType="ESXi_Syslog"}[1m])) by (ESXi)
 ```
 
 ### Data Types specific for VMware ESXi
