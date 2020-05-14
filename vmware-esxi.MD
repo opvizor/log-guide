@@ -34,7 +34,7 @@ sum(count_over_time({ESXi=~".+", DataType="ESXi_Syslog"}[1m])) by (ESXi)
 
 DataType
 
-* vCSA_Syslog
+* ESXi_Syslog
 * vSphereEvent
 * vSphereTask
 
